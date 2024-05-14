@@ -1,0 +1,118 @@
+*{
+    margin: 1px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.cuerpo{
+    background: red;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-flow: column nowrap;
+}
+.cabeza{
+        background: rgba(165, 42, 42, 0.527);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex-flow: column nowrap;
+        
+}
+.index{
+     background: rgb(138, 75, 33);
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     /*flex-flow: column nowrap;*/
+      height: 100px;
+      align-items: center;
+}
+.navegar{
+    background: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 30px;
+    flex: 1 1 auto;
+}
+.foto{
+    background: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 30px;
+    flex: 5 1 auto;
+}
+.video{
+    background: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 30px;
+    flex: 1 1 auto;
+}
+
+.volcrelleno{
+    background-color: aqua;
+    
+}
+p{
+    background-color: rgb(110, 49, 31);
+    border: 10px dotted black;
+    height: 250px;
+}
+.volcmedio{
+    background: blue;
+    display: flex;
+}
+.volcseccion{
+    background: black;
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+.volcarticulo{
+    background: brown;
+    flex: 1 1 40%;
+}
+
+.volcpublis{
+    background: white;
+    flex: 1 1 auto;
+}
+.volcpubl{
+    background: green;
+}
+
+
+
+
+
+
+/*De 601 a 800px*/
+@media all and (max-width: 800px){
+    /*El aside debe pasar hacia abajo*/
+        .section{
+            flex-direction: column;
+        }
+    /*Los elementos del menu deben mostrarse uno debajo del otro*/
+        .menu{
+            flex-direction: column;
+            height: auto;
+        }
+    /*Los elementos del aside se deben mostrar uno al lado del otro*/
+        .aside{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    
+    /*De 401 a 600px*/
+    @media all and (max-width: 600px){
+        .articulos{
+            flex-direction: column;
+        }
+    }
+    
+    /*De 0 a 400px*/
+    @media all and (max-width: 400px){
+        .aside{
+            flex-direction: column;
+        }
+    }
